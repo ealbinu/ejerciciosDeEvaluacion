@@ -44,6 +44,20 @@ $(document).ready(function(){
         } else if(op2.attr('data') == 0){
             //Segunda oportunidad
             
+            if(respuesta == correcta){
+                //Respuesta correcta
+                
+                op2.removeClass('fa-square-o').addClass('fa-check-square');
+                op2.attr('data',1);
+                //alert('correcta');
+            } else {
+                //Respuesta incorrecta
+                
+                op2.removeClass('fa-square-o').addClass('fa-minus-square');
+                op2.attr('data',1);
+                //alert('incorrecta');
+            }
+            
         } else {
             //Ya no hay oportunidades
         }
