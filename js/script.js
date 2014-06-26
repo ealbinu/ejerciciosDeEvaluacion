@@ -18,12 +18,22 @@ $(document).ready(function(){
     /* LETRA */
     $('.evaluar-letra').submit(function(){
       
+        var respuesta = $('.evaluar-letra input').val();
+        var correcta  = $('.evaluar-letra input').attr('data-respuesta');
+        
         //EVALUACION DE OPORTUNIDADES:
         var op1 = $('.evaluar-letra .op1');
         var op2 = $('.evaluar-letra .op2');
         if(op1.attr('data') == 0){
             //Primer oportunidad
             
+            if(respuesta == correcta){
+                //Respuesta correcta
+                alert('correcta');
+            } else {
+                //Respuesta incorrecta
+                alert('incorrecta');
+            }
             
         } else if(op2.attr('data') == 0){
             //Segunda oportunidad
@@ -36,16 +46,9 @@ $(document).ready(function(){
         
         
         
-        var respuesta = $('.evaluar-letra input').val();
-        var correcta  = $('.evaluar-letra input').attr('data-respuesta');
         
-        if(respuesta == correcta){
-            //Respuesta correcta
-            alert('correcta');
-        } else {
-            //Respuesta incorrecta
-            alert('incorrecta');
-        }
+        
+        
         
         
     });
