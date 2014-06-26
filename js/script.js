@@ -29,12 +29,16 @@ $(document).ready(function(){
             
             if(respuesta == correcta){
                 //Respuesta correcta
+                
                 op1.removeClass('fa-square-o').addClass('fa-check-square');
-                alert('correcta');
+                op1.attr('data',1);
+                //alert('correcta');
             } else {
                 //Respuesta incorrecta
+                
                 op1.removeClass('fa-square-o').addClass('fa-minus-square');
-                alert('incorrecta');
+                op1.attr('data',1);
+                //alert('incorrecta');
             }
             
         } else if(op2.attr('data') == 0){
