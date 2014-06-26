@@ -125,6 +125,23 @@
        <h3><i class="fa fa-spin fa-circle-o-notch fa-fw"></i> Ejercicio 2</h3>
         <p>Arrastra el objeto a su contenedor.</p>
         <!-- a.pure-button.pure-button-primary -->
+        
+        <div class="material pure-g">
+            <div class="pure-u-1-1">
+                <div class="perro">
+                    <img src="img/perro.gif" alt="">
+                </div>
+                <div class="doghouse">
+                    <img src="img/doghouse.png" alt="">
+                </div>
+                <div class="cathouse">
+                    <img src="img/cathouse.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+        
+        
         <a  href="#e01"            
             class="pure-button pure-button-primary">
             <i class="fa fa-arrow-left"></i>
