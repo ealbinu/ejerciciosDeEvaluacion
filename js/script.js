@@ -75,6 +75,40 @@ $(document).ready(function(){
 
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* ARRASTRA EL OBJETO */
+    $('.perro').draggable();
+    
+    $('.cathouse').droppable({
+        
+        drop: function(event, ui){
+            //alert('cat');
+            
+            if(ui.draggable.hasClass('perro')){
+                alert('ERROR');
+            }
+            
+        }
+    });
+    
+    
+    
+    
+    
+    
+    
+    
 }); //Termina document.ready
 
 
