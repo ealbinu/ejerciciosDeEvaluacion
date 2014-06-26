@@ -18,7 +18,9 @@ $(document).ready(function(){
     /* LETRA */
     $('.evaluar-letra').submit(function(){
       
+        
         var respuesta = $('.evaluar-letra input').val();
+        respuesta = respuesta.toLowerCase();
         var correcta  = $('.evaluar-letra input').attr('data-respuesta');
         
         //EVALUACION DE OPORTUNIDADES:
@@ -32,6 +34,8 @@ $(document).ready(function(){
                 
                 op1.removeClass('fa-square-o').addClass('fa-check-square');
                 op1.attr('data',1);
+                $('.evaluar-letra button').hide();
+                $('.evaluar-letra input').prop('disabled', true);
                 //alert('correcta');
             } else {
                 //Respuesta incorrecta
@@ -49,6 +53,8 @@ $(document).ready(function(){
                 
                 op2.removeClass('fa-square-o').addClass('fa-check-square');
                 op2.attr('data',1);
+                $('.evaluar-letra button').hide();
+                $('.evaluar-letra input').prop('disabled', true);
                 //alert('correcta');
             } else {
                 //Respuesta incorrecta
@@ -61,7 +67,10 @@ $(document).ready(function(){
         } else {
             //Ya no hay oportunidades
         }
-            
+        
+        //Termina submit de formulario
+        return false;
+        
     });
 
     
