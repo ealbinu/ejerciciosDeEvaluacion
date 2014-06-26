@@ -29,9 +29,11 @@ $(document).ready(function(){
             
             if(respuesta == correcta){
                 //Respuesta correcta
+                op1.removeClass('fa-square-o').addClass('fa-check-square');
                 alert('correcta');
             } else {
                 //Respuesta incorrecta
+                op1.removeClass('fa-square-o').addClass('fa-minus-square');
                 alert('incorrecta');
             }
             
@@ -41,16 +43,7 @@ $(document).ready(function(){
         } else {
             //Ya no hay oportunidades
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            
     });
 
     
