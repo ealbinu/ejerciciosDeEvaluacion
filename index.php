@@ -26,6 +26,20 @@
     <div class="pure-u-1-8"></div>
 </div>
 
+<div class="pure-g">
+    <div class="pure-u-1-8"></div>
+    <div class="pure-u-3-4">
+        <h2>Progreso</h2>
+        <div class="progreso">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="pure-u-1-8"></div>
+</div>
 
 <!-- agrupa todas las secciones -->
 <section class="secciones">
@@ -133,9 +147,11 @@
                 </div>
                 <div class="doghouse">
                     <img src="img/doghouse.png" alt="">
+                    <i class="fa fa-square-o respuesta"></i>
                 </div>
                 <div class="cathouse">
                     <img src="img/cathouse.png" alt="">
+                    <i class="fa fa-square-o respuesta"></i>
                 </div>
                 
             </div>

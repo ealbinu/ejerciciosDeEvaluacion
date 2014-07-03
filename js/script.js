@@ -91,14 +91,27 @@ $(document).ready(function(){
     $('.perro').draggable();
     
     $('.cathouse').droppable({
-        
         drop: function(event, ui){
             //alert('cat');
-            
             if(ui.draggable.hasClass('perro')){
-                alert('ERROR');
+                //alert('ERROR');
+                
+                $(this).children('.respuesta')
+                        .removeClass('fa-square-o')
+                        .addClass('fa-minus-square');
             }
-            
+        }
+    });
+    
+    $('.doghouse').droppable({
+        drop: function(event, ui){
+            //alert('dog');
+            if(ui.draggable.hasClass('perro')){
+                //alert('CORRECTO');
+                $(this).children('.respuesta')
+                        .removeClass('fa-square-o')
+                        .addClass('fa-check-square');
+            }
         }
     });
     
