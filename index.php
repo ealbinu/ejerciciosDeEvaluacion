@@ -186,6 +186,23 @@
     <div class="pure-u-3-4">
        <h3><i class="fa fa-spin fa-circle-o-notch fa-fw"></i> Ejercicio 3</h3>
         <p>Elige la respuesta correcta.</p>
+        
+        
+        <div class="material pure-g">
+            <div class="pure-u-1-2" id="pregunta1">
+                ¿Qué come un perro?
+                <br><br>
+                <!-- button.pure-button[tab] -->
+                <button class="pure-button">Tornillos</button>
+                <button class="pure-button" data="correcta">Croquetas</button>
+                <button class="pure-button">Chocolate</button>
+                <br><br><br>
+            </div>
+            <div class="pure-u-1-2">
+                
+            </div>
+        </div>
+        
         <!-- a.pure-button.pure-button-primary -->
         <a  href="#e02"            
             class="pure-button pure-button-primary">

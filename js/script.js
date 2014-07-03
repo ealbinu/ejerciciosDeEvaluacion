@@ -99,6 +99,7 @@ $(document).ready(function(){
                 $(this).children('.respuesta')
                         .removeClass('fa-square-o')
                         .addClass('fa-minus-square');
+                ui.draggable('destroy');
             }
         }
     });
@@ -116,6 +117,28 @@ $(document).ready(function(){
             }
         }
     });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* CONTESTA LA PREGUNTA */
+    
+    var respuestas = 0;
+    
+    $('#pregunta1 button').click(function(){
+        alert('click!');
+    });
+    
+    
+    
+    
+    
     
     
     
