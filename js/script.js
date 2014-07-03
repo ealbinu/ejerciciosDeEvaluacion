@@ -129,10 +129,25 @@ $(document).ready(function(){
     
     /* CONTESTA LA PREGUNTA */
     
-    var respuestas = 0;
-    
+    var contadorDeRespuestas = 0;
+    var correctas = 0;
     $('#pregunta1 button').click(function(){
-        alert('click!');
+        var data = $(this).attr('data');
+        
+        if(data == 'correcta'){
+            //alert('correcto');
+            correctas+=1;
+        } else {
+            //alert('error');
+        
+        }
+        
+        //Se suma 1 al contador
+        contadorDeRespuestas+=1;
+        //Oculta todos los botones de #pregunta1
+        $('#pregunta1 button').hide();
+    
+        evaluarRespuestasCorrectas(contadorDeRespuestas, correctas);
     });
     
     
@@ -151,6 +166,16 @@ $(document).ready(function(){
 
 
 
-
+function evaluarRespuestasCorrectas(contador, correctas){
+    if(contador==2){
+        if(correctas==2){
+            //resultado correcto
+            $('.progreso #e3').removeClass('error').addClass('correcto');
+        } else {
+            //resultado error
+            $('.progreso #e3').removeClass('correcto').addClass('error');
+        }
+    }
+}
 
 
