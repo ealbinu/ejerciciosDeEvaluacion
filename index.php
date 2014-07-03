@@ -31,11 +31,11 @@
     <div class="pure-u-3-4">
         <h2>Progreso</h2>
         <div class="progreso">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="e1"></div>
+            <div id="e2"></div>
+            <div id="e3"></div>
+            <div id="e4"></div>
+            <div id="e5"></div>
         </div>
     </div>
     <div class="pure-u-1-8"></div>

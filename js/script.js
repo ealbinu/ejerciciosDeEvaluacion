@@ -31,7 +31,7 @@ $(document).ready(function(){
             
             if(respuesta == correcta){
                 //Respuesta correcta
-                
+                $('.progreso #e1').removeClass('error').addClass('correcto');
                 op1.removeClass('fa-square-o').addClass('fa-check-square');
                 op1.attr('data',1);
                 $('.evaluar-letra button').hide();
@@ -39,7 +39,7 @@ $(document).ready(function(){
                 //alert('correcta');
             } else {
                 //Respuesta incorrecta
-                
+                $('.progreso #e1').removeClass('correcto').addClass('error');
                 op1.removeClass('fa-square-o').addClass('fa-minus-square');
                 op1.attr('data',1);
                 //alert('incorrecta');
@@ -50,7 +50,7 @@ $(document).ready(function(){
             
             if(respuesta == correcta){
                 //Respuesta correcta
-                
+                $('.progreso #e1').removeClass('error').addClass('correcto');
                 op2.removeClass('fa-square-o').addClass('fa-check-square');
                 op2.attr('data',1);
                 $('.evaluar-letra button').hide();
@@ -58,7 +58,7 @@ $(document).ready(function(){
                 //alert('correcta');
             } else {
                 //Respuesta incorrecta
-                
+                $('.progreso #e1').removeClass('correcto').addClass('error');
                 op2.removeClass('fa-square-o').addClass('fa-minus-square');
                 op2.attr('data',1);
                 //alert('incorrecta');
@@ -95,7 +95,7 @@ $(document).ready(function(){
             //alert('cat');
             if(ui.draggable.hasClass('perro')){
                 //alert('ERROR');
-                
+                $('.progreso #e2').removeClass('correcto').addClass('error');
                 $(this).children('.respuesta')
                         .removeClass('fa-square-o')
                         .addClass('fa-minus-square');
@@ -108,9 +108,11 @@ $(document).ready(function(){
             //alert('dog');
             if(ui.draggable.hasClass('perro')){
                 //alert('CORRECTO');
+                $('.progreso #e2').removeClass('error').addClass('correcto');
                 $(this).children('.respuesta')
                         .removeClass('fa-square-o')
                         .addClass('fa-check-square');
+                ui.draggable('destroy');
             }
         }
     });
