@@ -9,6 +9,26 @@ body, h1, p, a{
 }
 
 
+
+.progreso{
+    width: 100%;
+    height: 10px;
+}
+.progreso div{
+    width: 20%;
+    height: 10px;
+    background: #eee;
+    float: left;
+}
+
+.progreso div.correcto{
+    background: rgb(28, 184, 65);
+}
+.progreso div.error{
+    background: rgb(202, 60, 60);
+}
+
+
 section.secciones{
     height: 540px;
     overflow:hidden;
