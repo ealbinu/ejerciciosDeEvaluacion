@@ -153,6 +153,28 @@ $(document).ready(function(){
     
     
     
+    $('#pregunta2 button').click(function(){
+        var data = $(this).attr('data');
+        
+        if(data == 'correcta'){
+            //alert('correcto');
+            correctas+=1;
+        } else {
+            //alert('error');
+        
+        }
+        
+        //Se suma 1 al contador
+        contadorDeRespuestas+=1;
+        //Oculta todos los botones de #pregunta1
+        $('#pregunta2 button').hide();
+    
+        evaluarRespuestasCorrectas(contadorDeRespuestas, correctas);
+    });
+    
+    
+    
+    
     
     
     

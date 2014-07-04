@@ -198,9 +198,24 @@
                 <button class="pure-button">Chocolate</button>
                 <br><br><br>
             </div>
+        
+            
+            
+            
+            <div class="pure-u-1-2" id="pregunta2">
+                ¿Cuánto debe dormir un perro al día?
+                <br><br>
+                <!-- button.pure-button[tab] -->
+                <button class="pure-button">8 horas</button>
+                <button class="pure-button" data="correcta">18 horas</button>
+                <button class="pure-button">Más de 18 horas</button>
+                <br><br><br>
+            </div>
             <div class="pure-u-1-2">
                 
             </div>
+            
+            
         </div>
         
         <!-- a.pure-button.pure-button-primary -->
