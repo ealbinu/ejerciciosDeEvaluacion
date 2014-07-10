@@ -185,12 +185,39 @@ $(document).ready(function(){
     var endpointops = { 
         isSource : true
     }
-    
     var endpoint = jsPlumb.addEndpoint('unirperro', {
-                                            anchor: "BottomCenter"
+                                            anchor: "RightMiddle"
                                             }, endpointops);
     
+    var endpoint2ops = {
+        isTarget : true,
+        beforeDrop : function(params){
+            if(params.sourceId  == 'unirperro'){
+                //alert('correcto');
+                $('.progreso #e4').removeClass('error').addClass('correcto');
+                return true;
+            } 
+        }
+    }
+    var comidagato = jsPlumb.addEndpoint('comidagato', {
+                                            anchor: "LeftMiddle"
+                                            }, endpoint2ops);
     
+    
+    
+    var endpoint3ops = {
+        isTarget : true,
+        beforeDrop : function(params){
+            if(params.sourceId  == 'unirperro'){
+                //alert('error');
+                $('.progreso #e4').removeClass('correcto').addClass('error');
+                return true;
+            } 
+        }
+    }
+    var comidaperro = jsPlumb.addEndpoint('comidaperro', {
+                                            anchor: "LeftMiddle"
+                                            }, endpoint3ops);
     
     
     
