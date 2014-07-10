@@ -59,3 +59,28 @@ section.secciones>.pure-g{
 .material .doghouse img, .material .cathouse img {
     width: 100%;
 }
+
+
+
+
+
+/* EJERCICO 4 */
+
+
+
+.comidagato, .comidaperro{
+    width: 120px;
+    position: absolute;
+}
+.comidagato img, .comidaperro img{
+    width: 100%;
+}
+
+#jsplumbcontainer{
+    position: relative;
+    height: 300px;
+}
+#unirperro{
+    position: absolute;
+}
+

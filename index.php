@@ -247,6 +247,32 @@
        <h3><i class="fa fa-spin fa-circle-o-notch fa-fw"></i> Ejercicio 4</h3>
         <p>Une con una línea los objetos correspondientes.</p>
         <!-- a.pure-button.pure-button-primary -->
+        
+        
+        
+        
+        
+        
+        
+        <div class="pure-u-1-1" id="jsplumbcontainer">
+            <div class="unirperro" id="unirperro">
+                <img src="img/perro.gif">
+            </div>
+            <div class="comidagato" id="comidagato">
+                <img src="img/comidagato.jpg">
+            </div>
+            <div class="comidaperro" id="comidaperro">
+                <img src="img/comidaperro.jpg">
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
         <a  href="#e03"            
             class="pure-button pure-button-primary">
             <i class="fa fa-arrow-left"></i>
@@ -296,7 +322,7 @@
 <div class="pure-g" id="e06">
    <div class="pure-u-1-8"></div>
     <div class="pure-u-3-4">
-       <h3></i> Evaluación</h3>
+       <h3> Evaluación</h3>
         <p>Obtuviste X respuestas correctas.</p>
         <!-- a.pure-button.pure-button-primary -->
         <a  href="#e00"            
@@ -318,6 +344,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 <!-- scrollto.js -->
 <script src="js/jquery-scrollto.js"></script>
+<!-- JsPlumb -->
+<script src="js/jquery-jsplumb.js"></script>
 <!-- nuestro script -->
 <script src="js/script.js"></script>
 

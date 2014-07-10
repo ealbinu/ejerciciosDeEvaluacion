@@ -181,6 +181,36 @@ $(document).ready(function(){
     
     
     
+    /* UNE LAS LÍNEAS */
+    var endpointops = { 
+        isSource : true
+    }
+    
+    var endpoint = jsPlumb.addEndpoint('unirperro', {
+                                            anchor: "BottomCenter"
+                                            }, endpointops);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
