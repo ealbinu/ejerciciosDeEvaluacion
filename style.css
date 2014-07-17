@@ -111,6 +111,11 @@ section.secciones>.pure-g{
     background: #ccc;
 }
 
-
+.ordenaritems li.correcto{
+    border: 2px solid #00aa22;
+}
+.ordenaritems li.error{
+    border: 2px solid #aa0022;
+}
 
 

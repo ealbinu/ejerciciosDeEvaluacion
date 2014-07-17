@@ -7,6 +7,8 @@ $(document).ready(function(){
         
         $('section.secciones').scrollTo(irA, 350);
     
+        $('.respuestasCorrectas').html( $('.progreso .correcto').length );
+        
     });
     
     
@@ -232,7 +234,34 @@ $(document).ready(function(){
             var item2 =  $('.ordenaritems li:nth-child(2)');
             var item3 =  $('.ordenaritems li:nth-child(3)');
             var item4 =  $('.ordenaritems li:nth-child(4)');
+            //evaluacion individual
+            if(item1.attr('id') == 'accion1'){
+                item1.removeClass('error').addClass('correcto');
+            } else {
+                item1.removeClass('correcto').addClass('error');
+            }
             
+            if(item2.attr('id') == 'accion2'){
+                item2.removeClass('error').addClass('correcto');
+            } else {
+                item2.removeClass('correcto').addClass('error');
+            }
+            
+            if(item3.attr('id') == 'accion3'){
+                item3.removeClass('error').addClass('correcto');
+            } else {
+                item3.removeClass('correcto').addClass('error');
+            }
+            
+            if(item4.attr('id') == 'accion4'){
+                item4.removeClass('error').addClass('correcto');
+            } else {
+                item4.removeClass('correcto').addClass('error');
+            }
+            
+
+            
+            // evaluación general (correcto/error)
             if(
                 item1.attr('id') == 'accion1' &&
                 item2.attr('id') == 'accion2' &&
@@ -242,6 +271,12 @@ $(document).ready(function(){
                 //CORRECTO
                 $('.ordenaritems').sortable("disable");
                 $('.progreso #e5').removeClass('error').addClass('correcto');
+                
+                
+                
+                
+                
+                
             } else {
                 //ERROR
                 $('.progreso #e5').removeClass('correcto').addClass('error');

@@ -332,7 +332,7 @@
    <div class="pure-u-1-8"></div>
     <div class="pure-u-3-4">
        <h3> Evaluación</h3>
-        <p>Obtuviste X respuestas correctas.</p>
+        <p>Obtuviste <span class="respuestasCorrectas">X</span> respuestas correctas.</p>
         <!-- a.pure-button.pure-button-primary -->
         <a  href="#e00"            
             class="pure-button pure-button-primary">
