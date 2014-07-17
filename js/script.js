@@ -241,8 +241,10 @@ $(document).ready(function(){
             ){
                 //CORRECTO
                 $('.ordenaritems').sortable("disable");
+                $('.progreso #e5').removeClass('error').addClass('correcto');
             } else {
                 //ERROR
+                $('.progreso #e5').removeClass('correcto').addClass('error');
             }
             
         }   
