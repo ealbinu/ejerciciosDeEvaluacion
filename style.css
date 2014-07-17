@@ -94,3 +94,23 @@ section.secciones>.pure-g{
     top: 150px;
 }
 
+/* EJERCICIO 5 */
+
+.ordenaritems li{
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    list-style:none;
+    border-radius:5px;
+}
+
+.ordenaritems li:nth-child(even){
+    background: #bbb;
+}
+.ordenaritems li:nth-child(odd){
+    background: #ccc;
+}
+
+
+
+

@@ -226,7 +226,27 @@ $(document).ready(function(){
     
     /* EJERCIO 5- ORDENAR */
     
-    $('.ordenaritems').sortable();
+    $('.ordenaritems').sortable({
+        stop: function(event, ui){
+            var item1 =  $('.ordenaritems li:nth-child(1)');
+            var item2 =  $('.ordenaritems li:nth-child(2)');
+            var item3 =  $('.ordenaritems li:nth-child(3)');
+            var item4 =  $('.ordenaritems li:nth-child(4)');
+            
+            if(
+                item1.attr('id') == 'accion1' &&
+                item2.attr('id') == 'accion2' &&
+                item3.attr('id') == 'accion3' &&
+                item4.attr('id') == 'accion4'
+            ){
+                //CORRECTO
+                $('.ordenaritems').sortable("disable");
+            } else {
+                //ERROR
+            }
+            
+        }   
+    });
     $('.ordenaritems').disableSelection();
     
     
