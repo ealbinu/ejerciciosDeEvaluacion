@@ -300,6 +300,15 @@
        <h3><i class="fa fa-spin fa-circle-o-notch fa-fw"></i> Ejercicio 5</h3>
         <p>Acomoda las cajas en orden.</p>
         <!-- a.pure-button.pure-button-primary -->
+        
+        <!-- ul>li{palabra}*5 -->
+        <ul class="ordenaritems">
+            <li id="accion4">Desayunar</li>
+            <li id="accion2">Buscar al dueño</li>
+            <li id="accion3">Ir al baño</li>
+            <li id="accion1">Despertar</li>
+        </ul>
+        
         <a  href="#e04"            
             class="pure-button pure-button-primary">
             <i class="fa fa-arrow-left"></i>

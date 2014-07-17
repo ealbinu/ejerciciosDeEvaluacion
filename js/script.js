@@ -224,8 +224,10 @@ $(document).ready(function(){
     
     
     
+    /* EJERCIO 5- ORDENAR */
     
-    
+    $('.ordenaritems').sortable();
+    $('.ordenaritems').disableSelection();
     
     
     
